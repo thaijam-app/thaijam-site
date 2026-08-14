@@ -35,6 +35,20 @@ ThaiJam 泰記的官方網站。**https://thaijam.app**
    `ThaiStudyApp/Resources/` 對得上。**查不到出處的數字不要寫** ——
    初版曾經想寫「21,654 詞的斷詞字典」，追下去發現那是程式碼註解裡的
    一句分析，不是實際打包的檔案。
+3. ⚠️ **不要寫「真人發音」。** 音檔是 `Scripts/generate_audio.py` 用
+   Microsoft Edge TTS 的泰語神經語音（`th-TH-PremwadeeNeural`）生成的，
+   不是人錄的。初版寫成「1,727 個真人發音」，那是不實宣稱 ——
+   App 自己在 `SettingsView.swift` 就明寫「不是真人錄音」，網站不能比 App 誇大。
+
+## 泰式紋樣
+
+`index.html` 內嵌三個 SVG 路徑（กนก 火焰紋、ดอกบัวตูม 蓮花苞、ช่อฟ้า 屋脊飾），
+座標**直接取自 App 的 `ThaiStudyApp/Support/ThaiOrnament.swift`**（同樣是 100×100 座標系）。
+
+用 App 自己的紋樣而不是現成素材有兩個理由：網站與 App 是同一套設計語言；
+而且那份 Swift 檔的檔頭寫過為什麼不用 AI 生成的插畫 ——
+生圖模型畫泰文書寫系統很不可靠，在一個教泰文的 App 旁邊出現「看起來像泰文
+但不是字」的裝飾，是直接打臉專業度。
 
 ## 本機預覽
 
