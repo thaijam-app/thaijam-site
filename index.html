@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ThaiJam 泰記｜用聽歌學泰文</title>
+<meta name="description" content="ThaiJam 泰記：1,583 筆教材、1,727 個真人發音，全部離線可用。跟著泰文歌唱、間隔複習、AI 拆解句子與發音評測。">
+<meta property="og:title" content="ThaiJam 泰記｜用聽歌學泰文">
+<meta property="og:description" content="1,583 筆教材、1,727 個真人發音，離線可用。跟著泰文歌唱，順便把字記起來。">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#fff8f2; --surface:#fff; --line:#f0d9c8;
+    --ink:#2e211b; --ink-2:#4e3527; --ink-3:#755f53;
+    --brand:#b04c13; --brand-2:#c55b1c; --brand-deep:#9e430f;
+    --ai:#7347cc; --shadow:0 16px 50px rgb(92 48 20 / 10%);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1f1713; --surface:#2a1e18; --line:#4e3527;
+      --ink:#f9eee7; --ink-2:#e8d7cb; --ink-3:#c8ada0;
+      --brand:#ffad74; --brand-2:#ff9250; --brand-deep:#ffc39a;
+      --ai:#b49bf0; --shadow:0 16px 50px rgb(0 0 0 / 35%);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+    line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:min(100%,880px); margin:0 auto; padding:0 24px}
+  a{color:var(--brand); text-underline-offset:3px}
+
+  /* ── hero ── */
+  header{padding:clamp(56px,12vw,110px) 0 clamp(40px,8vw,72px)}
+  .eyebrow{
+    margin:0 0 14px; font-weight:650; letter-spacing:.06em; font-size:.82rem;
+    text-transform:uppercase; color:var(--brand);
+  }
+  h1{
+    margin:0 0 20px; font-size:clamp(2.1rem,7.5vw,3.6rem); line-height:1.15;
+    letter-spacing:-.035em; font-weight:800;
+  }
+  .grad{
+    background:linear-gradient(120deg,var(--brand-deep),var(--brand-2));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .lede{margin:0 0 32px; font-size:clamp(1.05rem,2.6vw,1.25rem); color:var(--ink-2); max-width:44ch}
+  .stats{display:flex; flex-wrap:wrap; gap:28px 44px; margin:0; padding:0; list-style:none}
+  .stats div{font-size:clamp(1.5rem,4vw,2rem); font-weight:750; letter-spacing:-.02em}
+  .stats span{display:block; font-size:.85rem; color:var(--ink-3); font-weight:500; letter-spacing:.01em}
+
+  /* ── sections ── */
+  section{padding:clamp(40px,7vw,64px) 0; border-top:1px solid var(--line)}
+  h2{margin:0 0 8px; font-size:clamp(1.35rem,3.6vw,1.7rem); letter-spacing:-.02em}
+  .sub{margin:0 0 32px; color:var(--ink-3)}
+  .grid{display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(248px,1fr))}
+  .card{
+    padding:26px; border:1px solid var(--line); border-radius:20px;
+    background:var(--surface); box-shadow:var(--shadow);
+  }
+  .card h3{margin:0 0 8px; font-size:1.05rem; letter-spacing:-.01em}
+  .card p{margin:0; color:var(--ink-2); font-size:.95rem}
+  .card.ai{border-color:color-mix(in srgb, var(--ai) 35%, var(--line))}
+  .card.ai h3{color:var(--ai)}
+  .tag{
+    display:inline-block; margin-bottom:10px; padding:3px 10px; border-radius:99px;
+    font-size:.72rem; font-weight:650; letter-spacing:.04em;
+    background:color-mix(in srgb, var(--ai) 14%, transparent); color:var(--ai);
+  }
+
+  /* ── status ── */
+  .status{
+    padding:24px 26px; border-radius:20px; border:1px dashed var(--line);
+    background:color-mix(in srgb, var(--brand) 6%, var(--surface));
+  }
+  .status p{margin:0; color:var(--ink-2)}
+  .status strong{color:var(--ink)}
+
+  /* ── footer ── */
+  footer{padding:44px 0 64px; border-top:1px solid var(--line); color:var(--ink-3); font-size:.9rem}
+  .links{display:flex; flex-wrap:wrap; gap:10px 22px; margin:0 0 20px; padding:0; list-style:none}
+  .links a{font-weight:600; text-decoration:none}
+  .links a:hover{text-decoration:underline}
+  footer p{margin:0}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">ThaiJam 泰記</p>
+    <h1>跟著泰文歌唱，<br><span class="grad">順便把字記起來。</span></h1>
+    <p class="lede">
+      內建 1,583 筆教材與真人發音，<strong>全部離線可用</strong>。
+      貼上一首歌的歌詞，逐行對照拼音與翻譯，唱到哪就學到哪。
+    </p>
+    <ul class="stats">
+      <li><div>1,583</div><span>筆教材</span></li>
+      <li><div>1,727</div><span>個真人發音</span></li>
+      <li><div>42</div><span>個生活句型</span></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>怎麼學</h2>
+    <p class="sub">從字母到整首歌，同一套進度。</p>
+    <div class="grid">
+      <div class="card">
+        <h3>間隔複習</h3>
+        <p>答對就往後排，答錯就拉回來。每天只要清完到期的那幾張，不必自己想該複習什麼。</p>
+      </div>
+      <div class="card">
+        <h3>歌曲跟唱</h3>
+        <p>逐行歌詞配拼音與翻譯，可以單句循環。支援自己匯入的音檔、Apple Music 與 Spotify。</p>
+      </div>
+      <div class="card">
+        <h3>字母描摹</h3>
+        <p>76 個字母，照筆順描一遍。泰文字母之間的差別很小，寫過才分得出來。</p>
+      </div>
+      <div class="card">
+        <h3>句型與測驗</h3>
+        <p>378 個生活句子、42 個句型。測驗會從你正在學的範圍出題，不是隨機抽。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>需要的時候才用 AI</h2>
+    <p class="sub">核心學習完全免費，也完全離線。AI 是額外的工具，用點數換。</p>
+    <div class="grid">
+      <div class="card ai">
+        <span class="tag">AI</span>
+        <h3>拆解一句話</h3>
+        <p>整句拆成詞、標出詞性與聲調、解釋為什麼這樣講。看不懂歌詞的時候問它。</p>
+      </div>
+      <div class="card ai">
+        <span class="tag">AI</span>
+        <h3>整首歌的解析</h3>
+        <p>把一首歌的用詞、俗語、句型整理出來，加進單字本繼續複習。</p>
+      </div>
+      <div class="card ai">
+        <span class="tag">AI</span>
+        <h3>發音評測</h3>
+        <p>按住錄一句，給你準確度、流暢度與逐詞的分數。每天有免費次數。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>你的資料</h2>
+    <p class="sub">不登入也能用，登入只為了讓進度跟著你走。</p>
+    <div class="grid">
+      <div class="card">
+        <h3>不用帳號就能學</h3>
+        <p>單字卡、複習、測驗、字母、句子、歌曲，全部不需要登入。只有 AI 功能與購買需要。</p>
+      </div>
+      <div class="card">
+        <h3>沒有廣告、沒有追蹤</h3>
+        <p>沒有廣告 SDK，也沒有第三方分析套件。不會記錄你開了哪些畫面。</p>
+      </div>
+      <div class="card">
+        <h3>換手機接得回來</h3>
+        <p>開啟跨裝置同步後，卡片、進度與買過的東西跟著帳號走。iOS 與 Android 之間也通。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>取得 App</h2>
+    <div class="status">
+      <p><strong>iOS 與 Android 都在上架準備中。</strong>
+      上架後這裡會放下載連結。有問題或想先試用，來信
+      <a href="mailto:support@thaijam.app">support@thaijam.app</a>。</p>
+    </div>
+  </section>
+
+  <footer>
+    <ul class="links">
+      <li><a href="https://privacy.thaijam.app/support/">支援與常見問題</a></li>
+      <li><a href="https://privacy.thaijam.app/privacy-policy/">隱私權政策（iOS）</a></li>
+      <li><a href="https://privacy.thaijam.app/privacy-policy-android/">隱私權政策（Android）</a></li>
+      <li><a href="mailto:support@thaijam.app">support@thaijam.app</a></li>
+    </ul>
+    <p>© 2026 ThaiJam 泰記</p>
+  </footer>
+
+</div>
+</body>
+</html>
