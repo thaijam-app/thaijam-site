@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>如何在 ThaiJam 連結 Spotify｜Client ID 設定教學</title>
-<meta name="description" content="依照 7 個步驟建立 Spotify Developer App、複製 Client ID，並在 ThaiJam 完成 Spotify 連結。">
-<meta property="og:title" content="如何在 ThaiJam 連結 Spotify">
-<meta property="og:description" content="Spotify Client ID 的完整設定教學，包含 Redirect URI、API/SDK 選項與 ThaiJam 連結步驟。">
+<title>How to Connect Spotify to ThaiJam｜Client ID Setup Guide</title>
+<meta name="description" content="Create a Spotify Developer App, copy its Client ID, and connect Spotify to ThaiJam in seven steps.">
+<meta property="og:title" content="How to Connect Spotify to ThaiJam">
+<meta property="og:description" content="A complete Spotify Client ID setup guide covering the Redirect URI, API/SDK selections, and connection steps in ThaiJam.">
 <meta property="og:type" content="article">
-<link rel="canonical" href="https://thaijam.app/support/spotify-setup/">
+<link rel="canonical" href="https://thaijam.app/support/spotify-setup/en/">
 <style>
   :root{
     color-scheme:light dark;
@@ -77,33 +77,33 @@
 </style>
 </head>
 <body>
-<a class="skip" href="#content">跳到教學內容</a>
+<a class="skip" href="#content">Skip to the guide</a>
 <div class="wrap">
   <header>
-    <a class="back" href="/support/">← 返回 ThaiJam 支援中心</a>
-    <nav class="language" aria-label="語言"><strong>中文</strong><a href="/support/spotify-setup/en/" lang="en">English</a></nav>
+    <a class="back" href="/support/">← Back to ThaiJam Support</a>
+    <nav class="language" aria-label="Language"><a href="/support/spotify-setup/" lang="zh-Hant">中文</a><strong>English</strong></nav>
     <p class="eyebrow">ThaiJam × Spotify</p>
-    <h1>連結 Spotify<br>Client ID 設定教學</h1>
-    <p class="lede">建立自己的 Spotify Developer App，將 Client ID 貼回 ThaiJam，即可搜尋 Spotify 曲目並連結播放。整個流程約需 3–5 分鐘。</p>
-    <a class="start" href="https://developer.spotify.com/dashboard" rel="noopener">開啟 Spotify for Developers ↗</a>
+    <h1>Connect Spotify<br>Client ID Setup Guide</h1>
+    <p class="lede">Create your own Spotify Developer App and paste its Client ID into ThaiJam to search for and connect Spotify tracks. The process takes about 3–5 minutes.</p>
+    <a class="start" href="https://developer.spotify.com/dashboard" rel="noopener">Open Spotify for Developers ↗</a>
   </header>
 
-  <nav class="toc" aria-label="教學步驟">
-    <a href="#step-1">1 登入</a><a href="#step-2">2 條款</a><a href="#step-3">3 建立 App</a>
+  <nav class="toc" aria-label="Guide steps">
+    <a href="#step-1">1 Sign in</a><a href="#step-2">2 Terms</a><a href="#step-3">3 Create app</a>
     <a href="#step-4">4 Redirect URI</a><a href="#step-5">5 API／SDK</a>
-    <a href="#step-6">6 Client ID</a><a href="#step-7">7 連結 ThaiJam</a>
+    <a href="#step-6">6 Client ID</a><a href="#step-7">7 Connect ThaiJam</a>
   </nav>
 
   <main id="content">
     <section class="step" id="step-1">
       <div class="number">1</div>
       <div>
-        <h2>登入並進入 Dashboard</h2>
-        <p>前往 <a href="https://developer.spotify.com/dashboard" rel="noopener">Spotify for Developers</a>。若選單顯示 <strong>Log in</strong>，請先登入 Spotify；登入後再次開啟右上角選單，點 <strong>Dashboard</strong>。</p>
+        <h2>Sign in and open the Dashboard</h2>
+        <p>Go to <a href="https://developer.spotify.com/dashboard" rel="noopener">Spotify for Developers</a>. If the menu shows <strong>Log in</strong>, sign in to Spotify first. Open the top-right menu again and select <strong>Dashboard</strong>.</p>
         <div class="shots">
-          <figure><img src="assets/home-menu.jpg" alt="Spotify for Developers 首頁，箭頭指向右上角選單" loading="lazy"><figcaption>先開啟右上角選單。</figcaption></figure>
-          <figure><img src="assets/login-menu.jpg" alt="Spotify for Developers 選單中的 Log in" loading="lazy"><figcaption>未登入時先點 Log in。</figcaption></figure>
-          <figure><img src="assets/dashboard-menu.jpg" alt="Spotify for Developers 選單中的 Dashboard" loading="lazy"><figcaption>登入後點 Dashboard。</figcaption></figure>
+          <figure><img src="../assets/home-menu.jpg" alt="Spotify for Developers homepage with an arrow pointing to the top-right menu" loading="lazy"><figcaption>Open the top-right menu.</figcaption></figure>
+          <figure><img src="../assets/login-menu.jpg" alt="Log in option in the Spotify for Developers menu" loading="lazy"><figcaption>Select Log in if you are signed out.</figcaption></figure>
+          <figure><img src="../assets/dashboard-menu.jpg" alt="Dashboard option in the Spotify for Developers menu" loading="lazy"><figcaption>After signing in, select Dashboard.</figcaption></figure>
         </div>
       </div>
     </section>
@@ -111,71 +111,71 @@
     <section class="step" id="step-2">
       <div class="number">2</div>
       <div>
-        <h2>若出現條款，先完成同意</h2>
-        <p>第一次使用 Spotify for Developers 時，可能會要求你同意開發者條款。勾選同意後按 <strong>Accept the terms</strong>。</p>
-        <div class="note"><p><strong>這個畫面不是每次都會出現。</strong>如果你已經同意過、直接看見 Dashboard，就跳到下一步。</p></div>
+        <h2>Accept the terms if prompted</h2>
+        <p>The first time you use Spotify for Developers, you may be asked to accept the developer terms. Check the agreement box and select <strong>Accept the terms</strong>.</p>
+        <div class="note"><p><strong>This screen does not appear every time.</strong> If you have already accepted the terms and can see the Dashboard, continue to the next step.</p></div>
       </div>
     </section>
 
     <section class="step" id="step-3">
       <div class="number">3</div>
       <div>
-        <h2>建立 Spotify App</h2>
-        <p>在 Dashboard 點 <strong>Create app</strong>。App name 與 App description 可以自行填寫，Website 可以留空。</p>
-        <figure class="single"><img src="assets/create-app.jpg" alt="Spotify Dashboard 的 Create app 按鈕" loading="lazy"><figcaption>點 Create app 開始建立。</figcaption></figure>
+        <h2>Create a Spotify app</h2>
+        <p>Select <strong>Create app</strong> on the Dashboard. You may enter any App name and App description. Website can be left blank.</p>
+        <figure class="single"><img src="../assets/create-app.jpg" alt="Create app button on the Spotify Dashboard" loading="lazy"><figcaption>Select Create app to begin.</figcaption></figure>
       </div>
     </section>
 
     <section class="step" id="step-4">
       <div class="number">4</div>
       <div>
-        <h2>填入 Redirect URI</h2>
-        <p>在 <strong>Redirect URIs</strong> 完整輸入下方網址。大小寫、符號與路徑都必須完全一致，輸入後務必按 <strong>Add</strong>。</p>
-        <div class="code-row"><code id="redirect-uri">thaijam://spotify-login-callback</code><button class="copy" type="button" data-copy="redirect-uri">複製</button></div>
-        <figure class="single"><img src="assets/app-form.jpg" alt="Spotify 建立 App 表單中的 App name、App description 與 Redirect URIs" loading="lazy"><figcaption>App name／description 自行填寫；Redirect URI 請使用上方固定值。</figcaption></figure>
+        <h2>Add the Redirect URI</h2>
+        <p>Enter the address below exactly in <strong>Redirect URIs</strong>. Capitalization, symbols, and the path must match. Then select <strong>Add</strong>.</p>
+        <div class="code-row"><code id="redirect-uri">thaijam://spotify-login-callback</code><button class="copy" type="button" data-copy="redirect-uri">Copy</button></div>
+        <figure class="single"><img src="../assets/app-form.jpg" alt="Spotify app form showing App name, App description, and Redirect URIs" loading="lazy"><figcaption>Use any name and description, but enter the exact Redirect URI shown above.</figcaption></figure>
       </div>
     </section>
 
     <section class="step" id="step-5">
       <div class="number">5</div>
       <div>
-        <h2>勾選 API／SDK 並儲存</h2>
-        <p>在 <strong>Which API/SDKs are you planning to use?</strong> 勾選以下三項，勾選同意 Spotify 開發者條款後，再按最下方的 <strong>Save</strong>。</p>
+        <h2>Select the APIs and SDKs</h2>
+        <p>Under <strong>Which API/SDKs are you planning to use?</strong>, select the three options below. Accept Spotify's developer terms, then select <strong>Save</strong> at the bottom.</p>
         <ul class="checks"><li>Web API</li><li>iOS</li><li>Android</li></ul>
-        <figure class="single"><img src="assets/api-sdk-save.jpg" alt="Spotify 建立 App 表單，Web API、iOS、Android 已勾選，底部有 Save 按鈕" loading="lazy"><figcaption>確認三項都已勾選，再按 Save。</figcaption></figure>
+        <figure class="single"><img src="../assets/api-sdk-save.jpg" alt="Spotify app form with Web API, iOS, and Android selected and a Save button at the bottom" loading="lazy"><figcaption>Confirm all three options are selected, then select Save.</figcaption></figure>
       </div>
     </section>
 
     <section class="step" id="step-6">
       <div class="number">6</div>
       <div>
-        <h2>複製 Client ID</h2>
-        <p>回到 App 的 <strong>Basic Information</strong>，點 Client ID 右側的複製圖示。</p>
-        <div class="warning"><p><strong>請確認複製的是 Client ID，不是 Client Secret。</strong>Client Secret 不需要貼入 ThaiJam，也不要傳給其他人。</p></div>
-        <figure class="single"><img src="assets/client-id.jpg" alt="Spotify App Basic Information，箭頭指向 Client ID 右側的複製按鈕" loading="lazy"><figcaption>點右側圖示複製 Client ID。</figcaption></figure>
+        <h2>Copy the Client ID</h2>
+        <p>Return to the app's <strong>Basic Information</strong> and select the copy icon beside Client ID.</p>
+        <div class="warning"><p><strong>Make sure you copy the Client ID, not the Client Secret.</strong> ThaiJam does not need your Client Secret. Never share it with anyone.</p></div>
+        <figure class="single"><img src="../assets/client-id.jpg" alt="Spotify app Basic Information with an arrow pointing to the copy button beside Client ID" loading="lazy"><figcaption>Select the icon on the right to copy the Client ID.</figcaption></figure>
       </div>
     </section>
 
     <section class="step" id="step-7">
       <div class="number">7</div>
       <div>
-        <h2>回 ThaiJam 完成連結</h2>
-        <p>開啟 ThaiJam，依序前往：</p>
+        <h2>Finish connecting in ThaiJam</h2>
+        <p>Open ThaiJam and follow these steps:</p>
         <div class="done">
           <ul class="checks">
-            <li>設定 → Spotify</li>
-            <li>貼上剛才複製的 Client ID</li>
-            <li>點「儲存」</li>
-            <li>點「連結 Spotify」，依畫面完成 Spotify 授權</li>
+            <li>Go to Settings → Spotify</li>
+            <li>Paste the Client ID you copied</li>
+            <li>Select Save</li>
+            <li>Select Connect Spotify and complete the authorization</li>
           </ul>
         </div>
-        <p style="margin-top:18px">完成後即可回到 ThaiJam 搜尋並連結 Spotify 曲目。Spotify 負責播放音訊；ThaiJam 顯示歌詞並同步播放位置。</p>
+        <p style="margin-top:18px">You can now search for and connect Spotify tracks in ThaiJam. Spotify plays the audio while ThaiJam displays lyrics and follows the playback position.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p><a href="/support/">ThaiJam 支援與常見問題</a> · <a href="mailto:support@thaijam.app">support@thaijam.app</a></p>
+    <p><a href="/support/">ThaiJam Support & FAQ</a> · <a href="mailto:support@thaijam.app">support@thaijam.app</a></p>
     <p>© 2026 ThaiJam 泰記</p>
   </footer>
 </div>
@@ -187,7 +187,7 @@
       try {
         await navigator.clipboard.writeText(source.textContent.trim());
         const original = button.textContent;
-        button.textContent = "已複製";
+        button.textContent = "Copied";
         setTimeout(() => button.textContent = original, 1600);
       } catch {
         window.getSelection()?.selectAllChildren(source);
