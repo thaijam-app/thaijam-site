@@ -6,22 +6,26 @@ ThaiJam 泰記的官方網站。**https://thaijam.app**
 
 ---
 
-## ⚠️ 這個 repo 只放首頁
+## 網站內容
 
-**隱私權政策與支援頁不在這裡**，它們在 `thaijam-app/thaijam-privacy`
-（網址 `privacy.thaijam.app`）：
+主網站包含首頁、支援頁與 Spotify 設定教學。原本送進 App Store 的
+`privacy.thaijam.app/support/` 會繼續保留；隱私權政策仍由
+`thaijam-app/thaijam-privacy` 發布：
 
 | 頁面 | 網址 | 來源 repo |
 |---|---|---|
 | 首頁 | `thaijam.app` | **這裡** |
-| 支援與常見問題 | `privacy.thaijam.app/support/` | `thaijam-privacy` |
+| 支援與常見問題 | `thaijam.app/support/` | **這裡** |
+| Spotify 設定教學 | `thaijam.app/support/spotify-setup/` | **這裡** |
+| 原支援網址（App Store 使用中） | `privacy.thaijam.app/support/` | `thaijam-privacy` |
 | 隱私權政策（iOS） | `privacy.thaijam.app/privacy-policy/` | `thaijam-privacy` |
 | 隱私權政策（Android） | `privacy.thaijam.app/privacy-policy-android/` | `thaijam-privacy` |
 
-分成兩個 repo 是因為**一個 repo 只能有一個 `CNAME`**，而那兩個網址
-已經送進 App Store / Play Console 了 —— 搬過來會讓已經送出的網址失效。
+分成兩個 repo 是因為**一個 repo 只能有一個 `CNAME`**。原支援網址已送進
+App Store，因此在 App Store 改用新網址以前不能移除。
 
-首頁底部連到那三頁用的是**絕對網址**，改動時要一起看。
+首頁底部的支援與 Spotify 連結使用主網域；隱私權政策仍使用完整的
+`privacy.thaijam.app` 網址。
 
 ---
 
