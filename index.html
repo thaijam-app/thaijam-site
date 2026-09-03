@@ -117,15 +117,15 @@ h2{margin:0 0 12px; font-size:clamp(1.5rem,3.8vw,2.05rem); letter-spacing:-.01em
    「Download on the App Store」原件，不能重畫、不能改色、不能把 Apple logo
    放進自訂樣式裡（這一版之前就是那樣，已改）。原件取自 Apple 自己的徽章
    服務，繁中版（檔名裡的 CNTC）。
-   規範：網頁上高度至少 40px；四周留白至少徽章高度的 10%；不加陰影或濾鏡。
-   （這裡 52px，.getlinks 的 padding:5px 就是那 10% 的留白。）
+   規範：網頁上高度至少 40px；Google Play 四周留白至少徽章高度的 25%；不加陰影或濾鏡。
+   （這裡 52px，.getlinks 的 padding:13px 就是 Google Play 要求的留白。）
 
    黑白兩版都在 assets/，兩版都是原件、都合規，差別純粹是在這個深底上的
    份量：黑版只靠一圈灰邊撐對比，讀起來比它上面那段說明還輕；白版是這一頁
    唯一的轉換動作，該是最重的那一個。所以用白版；要換回黑版改這一行的檔名。
 
-   Android 還沒公開上架（Play 頁面回 404），所以先只有一顆。 */
-.getlinks{display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-top:26px; padding:5px}
+   Apple 與 Google Play 徽章高度一致，並保留 Google 規範要求的四分之一徽章高度留白。 */
+.getlinks{display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-top:26px; padding:13px}
 .get{display:inline-block; line-height:0}
 .get img{height:52px; width:auto; display:block}
 .get:hover{filter:brightness(1.06)}
@@ -273,18 +273,15 @@ footer p{margin:0; font-size:.84rem}
     <div class="cta">
       <svg class="orn chofa" viewBox="0 0 100 100" aria-hidden="true"><use href="#chofa"/></svg>
       <h2 class="serif">สวัสดี — 準備好了嗎</h2>
-      <p>iOS 版已經在 App Store 上架，Android 版還在上架準備中。
+      <p>iOS 與 Android 版都已經在商店上架。
          有任何問題，寫信給我們。</p>
       <div class="getlinks">
         <a class="get" href="https://apps.apple.com/app/id6796388724">
           <img src="/assets/app-store-badge-white.svg" alt="在 App Store 下載 ThaiJam" width="141" height="52">
         </a>
-        <!-- Android 上架後放出來（Play 頁面現在回 404，放了是死連結）。
-             Google Play 那顆同樣要用官方徽章原件，不要自己畫：
         <a class="get" href="https://play.google.com/store/apps/details?id=com.thaijam.android">
-          <img src="/assets/google-play-badge.png" alt="在 Google Play 下載 ThaiJam" height="52">
+          <img src="/assets/google-play-badge-zh-tw.svg" alt="在 Google Play 下載 ThaiJam" width="175" height="52">
         </a>
-        -->
       </div>
       <a class="mail" href="mailto:support@thaijam.app">support@thaijam.app</a>
     </div>
